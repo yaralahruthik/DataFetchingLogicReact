@@ -12,11 +12,19 @@ const ReactQueryWay = () => {
 	return (
 		<div>
 			<h1>React Query Way</h1>
-			<ul>
-				{data.map((item) => (
-					<li key={item.id}>{item.title}</li>
-				))}
-			</ul>
+			{error ? (
+				<>Oh no, there was an error</>
+			) : isLoading ? (
+				<>Loading...</>
+			) : data ? (
+				<>
+					<ul>
+						{data.map((item) => (
+							<li key={item.id}>{item.title}</li>
+						))}
+					</ul>
+				</>
+			) : null}
 		</div>
 	);
 };
