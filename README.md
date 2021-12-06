@@ -1,3 +1,7 @@
+# About the project
+  * This is an example project set up to see the diffrences between three ways of handling data fetch logic.
+  * Includes Fetch API, Redux Toolkit Query, and React Query.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
