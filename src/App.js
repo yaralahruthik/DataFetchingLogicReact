@@ -7,13 +7,13 @@ const queryClient = new QueryClient();
 
 const App = () => {
 	return (
-		<div className='center'>
+		<>
 			<ReactWay />
 			<ReduxWay />
 			<QueryClientProvider client={queryClient}>
 				<ReactQueryWay />
 			</QueryClientProvider>
-		</div>
+		</>
 	);
 };
 
